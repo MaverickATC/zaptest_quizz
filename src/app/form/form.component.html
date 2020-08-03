@@ -1,0 +1,24 @@
+<div class="container">
+  <label>
+    Phone Number:
+  <input type="text" placeholder="Phone Number" [formControl]="phone">
+  </label>
+  <label>
+    First Name:
+    <input type="text" placeholder="First Name" [formControl]="firstName">
+  </label>
+  <label>
+    Last Name:
+    <input type="text" placeholder="Last Name" [formControl]="lastName">
+  </label>
+  <label>
+    Email:
+    <input type="text" placeholder="Email" [formControl]="email">
+  </label>
+  <label>
+    Notes:
+    <textarea placeholder="Notes" rows="3" [formControl]="notes"></textarea>
+  </label>
+  <hr>
+  <button (click)="addItem('clicked')">add</button>
+</div>
